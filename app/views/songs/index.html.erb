@@ -4,9 +4,9 @@
   <head>
     <tr>
       <th>Title</th>
+      <th>Artist Name</th>
       <th>Year</th>
       <th>Genre</th>
-      <th>Artist Name</th>
       <th>Links</th>
     </tr>
   </head>
@@ -15,13 +15,11 @@
     <% @songs.each do |song| %>
       <tr>
         <td><%= song.title %></td>
-        <td><%= song.title %></td>
-        <td><%= song.title %></td>
-        <td><%= song.title %></td>
+        <td><%= song.artist_name %></td>
+        <td><%= song.release_year %></td>
+        <td><%= song.genre %></td>
         <td></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-    
